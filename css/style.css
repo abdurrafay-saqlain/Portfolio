@@ -14,17 +14,12 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
-/* .site-main-wrapper .mobile-nav{
-  display: none;
-} */
 
-.site-main-wrapper .hamberger img {
-  display: none;
-}
 body {
   font-family: "Poppins", sans-serif;
   height: 850px;
 }
+
 header {
   background-color: var(--dark);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
@@ -486,15 +481,12 @@ footer .footer-socials {
   .site-main-wrapper {
     position: relative;
   }
-  .hamberger {
+  button.hamberger {
     position: absolute;
     top: 40px;
     right: 40px;
-    z-index: 1;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    display: block;
+    z-index: 1001;
   }
   .hamberger img {
     width: 30px;
@@ -643,5 +635,53 @@ footer .footer-socials {
     font-size: 11px;
   }
 }
-
-/* Media Queries Css End */
+@media (max-width: 1600px) {
+  .mobile-nav {
+    display: none;
+  }
+  button.hamberger {
+    display: none;
+  }
+  .site-main-wrapper .hamberger img {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .mobile-nav {
+    display: block;
+  }
+  button.hamberger {
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  
+  }
+  .site-main-wrapper .hamberger img {
+    display: block;
+    width: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}
+@media (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+  }
+  button.hamberger {
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  .site-main-wrapper .hamberger img {
+    display: block;
+    width: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}
+/* Media Queries End */
