@@ -18,6 +18,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 850px;
+  overflow-x: hidden;
 }
 
 header {
@@ -568,8 +569,14 @@ footer .footer-socials {
 }
 
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero {
     flex-direction: column;
+  }
+  .hero .left img {
+    width: 195px;
   }
 
   header {
@@ -636,6 +643,12 @@ footer .footer-socials {
   }
 }
 @media (max-width: 1600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero .left img {
+    width: 195px;
+  }
   .mobile-nav {
     display: none;
   }
@@ -647,6 +660,12 @@ footer .footer-socials {
   }
 }
 @media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero .left img {
+    width: 195px;
+  }
   .mobile-nav {
     display: block;
   }
@@ -655,7 +674,6 @@ footer .footer-socials {
     background-color: transparent;
     outline: none;
     border: none;
-  
   }
   .site-main-wrapper .hamberger img {
     display: block;
@@ -666,8 +684,14 @@ footer .footer-socials {
   }
 }
 @media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .mobile-nav {
     display: block;
+  }
+  .hero .left img {
+    width: 195px;
   }
   button.hamberger {
     display: block;
@@ -675,7 +699,7 @@ footer .footer-socials {
     outline: none;
     border: none;
   }
-  
+
   .site-main-wrapper .hamberger img {
     display: block;
     width: 30px;
